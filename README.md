@@ -103,7 +103,7 @@ Modalità Scura:
 
 Funzionalità Aggiuntive in Azione:
 
-* ![Contatore in Modalità Step (Multipli di 25)](./screenshots/step_in_use.png)
+* ![Contatore in Modalità Step (Multipli di 25)](./screenshots/counter_step_in_use.png)
 * ![Bottone in Modalità Chiara](./screenshots/theme_toggle_dark_mode_moon.png)
 * ![Contatore in Modalità Chiara (Valore Negativo)](./screenshots/theme_toggle_light_mode_sun.png)
 
