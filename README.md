@@ -91,16 +91,28 @@ Il progetto è organizzato in una struttura di directory chiara e modulare, segu
 
 Modalità Chiara:
 
+* ![Contatore in Modalità Chiara (Valore 0)](./screenshots/counter_light_mode_0.png)
+* ![Contatore in Modalità Chiara (Valore Positivo)](./screenshots/counter_light_mode_positive.png)
+* ![Contatore in Modalità Chiara (Valore Negativo)](./screenshots/counter_light_mode_negative.png)
+
 Modalità Scura:
 
+* ![Contatore in Modalità Scura (Valore 0)](./screenshots/counter_dark_mode_0.png)
+* ![Contatore in Modalità Scura (Valore Positivo)](./screenshots/counter_dark_mode_positive.png)
+* ![Contatore in Modalità Scura (Valore Negativo)](./screenshots/counter_dark_mode_negative.png)
+
 Funzionalità Aggiuntive in Azione:
+
+* ![Contatore in Modalità Step (Multipli di 25)](./screenshots/step_in_use.png)
+* ![Bottone in Modalità Chiara](./screenshots/theme_toggle_dark_mode_moon.png)
+* ![Contatore in Modalità Chiara (Valore Negativo)](./screenshots/theme_toggle_light_mode_sun.png)
 
 🌐 Live Demo & Repository
 Puoi esplorare il codice sorgente completo di questo progetto e provare l'applicazione interattiva direttamente online ai seguenti link:
 
-Live Demo: ([INSERIRE QUI IL LINK AL TUO LIVE DEMO])
+Live Demo: https://progetto-javascript-di-erika-rossi.netlify.app/
 
-Repository GitHub: ([INSERIRE QUI IL LINK AL TUO REPOSITORY GITHUB])
+Repository GitHub: https://github.com/erikarossi95/Progetto-JavaScript-di-Erika-Rossi
 
 🧑‍💻 Autore
 Erika Rossi
