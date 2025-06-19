@@ -1,0 +1,226 @@
+/* Stile Globale */
+body {
+    font-family: system-ui, -apple-system, BlinkMacMacFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Contenitore principale dell'applicazione */
+#app {
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Contenitore del counter */
+.counter-container {
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Display del valore */
+.counter-display {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #1c1e21;
+    margin: 1rem 0;
+    transition: color 0.3s ease;
+}
+
+/* Contenitore per i pulsanti */
+.counter-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Stile comune per i pulsanti */
+.btn {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0.5rem 1.2rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Pulsante per incrementare */
+.btn-increment {
+    background-color: #e7f3ff;
+    color: #1877f2;
+}
+
+.btn-increment:hover {
+    background-color: #d0e5ff;
+}
+
+/* Pulsante per decrementare */
+.btn-decrement {
+    background-color: #fdebe7;
+    color: #fa383e;
+}
+
+.btn-decrement:hover {
+    background-color: #ffdde0;
+}
+
+/* Pulsante per il reset */
+.btn-reset {
+    background-color: #f5f5f5;
+    color: #606770;
+    border: 1px solid #ddd;
+}
+
+.btn-reset:hover {
+    background-color: #e9ebee;
+}
+
+/* Pulsante per il cambio tema */
+.btn-theme-toggle {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    font-size: 1.5rem;
+    padding: 0; 
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.btn-theme-toggle:hover {
+    background-color: #c0c0c0;
+}
+
+/* Stile base per le icone del tema */
+.btn-theme-toggle i {
+    color: #333; 
+    transition: color 0.3s ease;
+}
+
+/* Colori dinamici per il display */
+.counter-display.positive {
+    color: #31a24c; 
+}
+
+.counter-display.negative {
+    color: #fa383e;
+}
+
+/* Contenitore per l'input dello step */
+.step-container {
+    margin-top: 2rem;
+    border-top: 1px solid #f0f2f5;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.step-container label {
+    font-weight: 600;
+    color: #606770;
+    margin-right: 0.75rem;
+}
+
+/* Campo di input per il numero */
+.step-input {
+    width: 70px;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccd0d5;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1c1e21;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Rimuove le freccette di default su alcuni browser */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Stili per il Tema Scuro */
+body.dark-mode {
+    background-color: #1c1e21;
+    color: #e4e6eb;
+}
+
+body.dark-mode .counter-container {
+    background-color: #242526;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .counter-display {
+    color: #e4e6eb;
+}
+
+body.dark-mode .counter-display.positive {
+    color: #31a24c; 
+}
+
+body.dark-mode .counter-display.negative {
+    color: #fa383e; 
+}
+
+body.dark-mode .btn-reset {
+    background-color: #3a3b3c;
+    color: #e4e6eb;
+    border-color: #4a4b4c;
+}
+
+body.dark-mode .btn-reset:hover {
+    background-color: #4a4b4c;
+}
+
+body.dark-mode .step-container {
+    border-color: #3a3b3c;
+}
+
+body.dark-mode .step-container label {
+    color: #b0b3b8;
+}
+
+body.dark-mode .step-input {
+    background-color: #3a3b3c;
+    color: #e4e6eb;
+    border-color: #4a4b4c;
+}
+
+body.dark-mode .btn-theme-toggle {
+    background-color: #3a3b3c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .btn-theme-toggle:hover {
+    background-color: #4a4b4c;
+}
+
+body.dark-mode .btn-theme-toggle i {
+    color: #e4e6eb; 
+}
